@@ -5,21 +5,21 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class CreateCardDto {
 
 	@JsonProperty("userId")
-	private long userId;
+	private Long userId;
 
 	@JsonProperty("accountType")
 	private String accountType;
 
-	public CreateCardDto(long userId, String accountType) {
+	public CreateCardDto(Long userId, String accountType) {
 		this.userId = userId;
 		this.accountType = accountType;
 	}
 
-	public long getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(long userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 

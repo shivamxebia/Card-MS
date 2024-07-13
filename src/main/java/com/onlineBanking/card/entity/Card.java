@@ -21,7 +21,7 @@ public class Card implements Serializable {
 	@Column
 	private long id;
 	@Column
-	private long userId;
+	private Long userId;
 	@Column
 	private long cardNumber;
 	@Column
@@ -44,11 +44,11 @@ public class Card implements Serializable {
 		this.id = id;
 	}
 
-	public long getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(long userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 
